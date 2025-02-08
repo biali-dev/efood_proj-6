@@ -4,16 +4,13 @@ import InputMask from 'react-input-mask'
 import { Navigate, useNavigate } from 'react-router-dom'
 import * as Yup from 'yup'
 
-// Funções
 import { usePurchaseMutation } from '../../services/api'
 import { open } from '../../store/reducers/cart'
 import { getTotalPrice, parseToBrl } from '../../utils'
 
-// Componentes
 import Button from '../../components/Button'
 import Card from '../../components/Card'
 
-// Estilos
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { clear } from '../../store/reducers/cart'
@@ -23,7 +20,7 @@ const Checkout = ({ onClose }: { onClose: () => void }) => {
   const [payWith, setPayWith] = useState(false)
   const [isOpenCart, setIsOpenCart] = useState(false)
 
-  const navigate = useNavigate() // Hook para navegação, substituindo o uso de `window.location.reload()`
+  const navigate = useNavigate() 
 
   const [purchase, { data, isSuccess, isLoading }] = usePurchaseMutation()
   const { items } = useSelector((state: RootReducer) => state.cart)
