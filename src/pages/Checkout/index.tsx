@@ -20,7 +20,7 @@ const Checkout = ({ onClose }: { onClose: () => void }) => {
   const [payWith, setPayWith] = useState(false)
   const [isOpenCart, setIsOpenCart] = useState(false)
 
-  const navigate = useNavigate() 
+  const navigate = useNavigate()
 
   const [purchase, { data, isSuccess, isLoading }] = usePurchaseMutation()
   const { items } = useSelector((state: RootReducer) => state.cart)
