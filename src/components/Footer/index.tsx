@@ -1,14 +1,9 @@
-// Recursos externos
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
-
-// Imagens (não é exatamente um recurso externo, mas também não se encaixa bem em componentes ou estilos)
 import faceSrc from '../../assets/icons/facebook.png'
 import instaSrc from '../../assets/icons/instagram.png'
 import LogoImgHome from '../../assets/icons/logo.png'
 import twSrc from '../../assets/icons/twitter.png'
-
-// Estilos
 import * as S from './styles'
 
 const Footer = () => (

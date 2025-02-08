@@ -6,7 +6,7 @@ export type Props = {
   to?: string
   onClick?: () => void
   children: React.ReactNode
-  background: 'light' | 'dark' // Use background em vez de $background
+  background: 'light' | 'dark'
   disabled?: boolean
 }
 

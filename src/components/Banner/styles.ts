@@ -18,14 +18,12 @@ export const ImgBanner = styled.div`
     z-index: 1;
     position: relative;
 
-    /* Responsividade */
     @media (max-width: ${breakpoints.tablet}) {
       font-size: 24px;
       margin-left: 20px;
       padding-top: 15px;
     }
 
-    /* Responsividade */
     @media (max-width: ${breakpoints.mobile}) {
       font-size: 24px;
       margin-left: 20px;

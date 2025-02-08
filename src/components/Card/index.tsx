@@ -1,4 +1,3 @@
-// Estilos
 import * as S from './styles'
 
 type Props = {

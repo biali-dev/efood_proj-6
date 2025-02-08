@@ -1,18 +1,12 @@
-// Recursos externos
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
-// Funções
-
-// Imagens
 import RestaurantRatingImg from '../../assets/icons/estrela.png'
 
-// Componentes
 import Tag from '../../components/Tag'
 import Botao from '../Button'
 import ModalPoupap from '../Modal'
 
-// Estilos
 import * as S from './styles'
 
 export type Efood = {
@@ -30,7 +24,7 @@ type ProductProps = {
   image: string
   infos: string[]
   title: string
-  nota?: number // Tornar 'nota' opcional
+  nota?: number
   description: string
   to: string
   background: 'light' | 'dark'
